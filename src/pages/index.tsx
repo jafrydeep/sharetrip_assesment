@@ -14,7 +14,7 @@ interface TripDetail {
   title: string
   terminal?: number
   airport: string
-  alert ?: string
+  alert?: string
   data: { [key: string]: any }
 }
 const HomePage: React.FC = () => {
@@ -34,13 +34,36 @@ const HomePage: React.FC = () => {
         title: 'Departure from Dhaka',
         terminal: 1,
         airport: 'Hazrat Shahjalal International Airport',
-        alert: 'Technical stoppage at Malpensa International Airport (Milano). Before booking this flight please check your visa requirements as per your nationality',
-        data: {},
+        alert:
+          'Technical stoppage at Malpensa International Airport (Milano). Before booking this flight please check your visa requirements as per your nationality',
+        data: {
+          destination: 'DAC - DXB',
+          duration: '12 hr 20 min',
+          time: '07:30 PM',
+          time2: '08:50 AM',
+          date: '28 Mar, Friday',
+          date2: '29 Mar, Saturday',
+          service: 'Turkish Airlines',
+          flight: 'TUR467',
+          class: 'ECONOMY-Y (O)',
+          industry: 'Airbus Industrie 737-800-738',
+        },
       },
       {
         title: 'Layover at Dubai: 12 hr 20 min ',
         airport: 'Dubai International Airport',
-        data: {},
+        data: {
+          destination: 'DAC - DXB',
+          duration: '12 hr 20 min',
+          time: '07:30 PM',
+          time2: '08:50 AM',
+          date: '28 Mar, Friday',
+          date2: '29 Mar, Saturday',
+          service: 'Turkish Airlines',
+          flight: 'TUR467',
+          class: 'ECONOMY-Y (O)',
+          industry: 'Airbus Industrie 737-800-738',
+        },
       },
       {
         title: 'Destination at New York',
