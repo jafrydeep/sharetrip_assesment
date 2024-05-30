@@ -10,7 +10,7 @@ interface FlightCardTopProps {
 
 const FlightCardTop: React.FC<FlightCardTopProps> = ({ number, route, tripDetails, duration }) => {
     return (
-        <div className="md:flex items-center bg-white p-4 border-b-[#EBF0F5] border-b-2">
+        <div className="rounded-xl md:flex items-center bg-white p-4 border-b-[#EBF0F5] border-b-2">
             <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-blue-500 text-white rounded-full">
                 {number}
             </div>

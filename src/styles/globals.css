@@ -25,3 +25,25 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.dividerContainer {
+  width: .85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Adjust as needed */
+}
+
+.divider {
+  width: 1px;
+  height: -webkit-fill-available;
+  background-color: #E0E0E0; /* Adjust color as needed */
+}
+
+.planeIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

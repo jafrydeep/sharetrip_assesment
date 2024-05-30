@@ -5,6 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 import FlightCard from '@/components/FlightCard'
 
 export interface TripDetailsType {
+  length: number
   type: string
   dates: string
   stops: string
@@ -15,7 +16,7 @@ interface TripDetail {
   terminal?: number
   airport: string
   alert?: string
-  data: { [key: string]: any }
+  data: any
 }
 const HomePage: React.FC = () => {
   const breadcrumbItems = [
@@ -34,8 +35,7 @@ const HomePage: React.FC = () => {
         title: 'Departure from Dhaka',
         terminal: 1,
         airport: 'Hazrat Shahjalal International Airport',
-        alert:
-          'Technical stoppage at Malpensa International Airport (Milano). Before booking this flight please check your visa requirements as per your nationality',
+        alert: 'Technical stoppage at Malpensa International Airport (Milano). Before booking this flight please check your visa requirements as per your nationality',
         data: {
           destination: 'DAC - DXB',
           duration: '12 hr 20 min',
@@ -69,9 +69,10 @@ const HomePage: React.FC = () => {
         title: 'Destination at New York',
         terminal: 4,
         airport: 'John F Kennedy International Airport',
-        data: {},
+        data: {}
       },
     ],
+    length: 0
   }
   return (
     <Layout>

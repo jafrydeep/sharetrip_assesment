@@ -12,7 +12,7 @@ const FlightCard: React.FC<FlightCardProps> = ({ tripDetails }) => {
 
 
     return (
-        <div className="bg-white md:h-[95%] w-full rounded-lg shadow-lg">
+        <div className="bg-white w-full rounded-xl shadow-lg">
             {/* Top */}
             <FlightCardTop
                 number={1}
